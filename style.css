@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* You can change this to a more elegant font like 'Georgia' or 'Times New Roman' */
+    line-height: 1.6;
+    background-color: #0a0a0a; /* Black background */
+    color: #e0e0e0; /* Light gray text for contrast */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Header Styles */
+header {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1a1a1a; /* Darker shade for header */
+    color: #1e90ff; /* Bright blue color for text */
+    box-shadow: 0 4px 20px rgba(30, 144, 255, 0.5); /* Blue glow effect */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    color: #1e90ff; /* Bright blue color for links */
+    text-decoration: none;
+    font-size: 2.5rem; /* Increased font size for elegance */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Added transform for click effect */
+}
+
+.nav-link:hover {
+    background: rgba(30, 144, 255, 0.2); /* Light blue on hover */
+    color: #fff; /* White text on hover */
+}
+
+.nav-link:active {
+    transform: scale(0.95); /* Scale down effect on click */
+}
+
+/* Music Section */
+.music-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#play-button {
+    padding: 10px 20px;
+    font-size: 1.5rem; /* Increased font size for elegance */
+    background-color: #1e90ff; /* Bright blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Added transform for click effect */
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.5); /* Button shadow */
+}
+
+#play-button:hover {
+    background-color: #1c86ee; /* Darker blue on hover */
+    box-shadow: 0 6px 15px rgba(30, 144, 255, 0.7); /* Stronger shadow on hover */
+}
+
+#play-button:active {
+    transform: scale(0.95); /* Scale down effect on click */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h3 {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-style: italic;
+    color: #1e90ff; /* Bright blue color for quote */
+    text-shadow: 0 2px 5px rgba(30, 144, 255, 0.5); /* Text shadow effect */
+    font-size: 1.8rem; /* Increased font size for elegance */
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid #1e90ff; /* Bright blue border for profile image */
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.5); /* Glow effect */
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Section */
+.about {
+    padding: 3rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Business Info Section */
+.business-info {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: rgba(255, 255, 255, 0.05); /* Semi-transparent background */
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #1e90ff; /* Bright blue border for table */
+}
+
+th {
+    background: rgba(30, 144, 255, 0.1); /* Light blue for header */
+    color: #1e90ff; /* Bright blue text for header */
+}
+
+.total-valuation {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e90ff; /* Bright blue for total valuation */
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: #1e90ff; /* Bright blue for footer text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h3 {
+        font-size: 1.2rem;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero, .about, .business-info {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Table Hover Effects */
+tbody tr:hover {
+    background: rgba(30, 144, 255, 0.1); /* Light blue on row hover */
+    transition: background 0.3s ease;
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Dark background for scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e90ff; /* Bright blue for scrollbar thumb */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1c86ee; /* Darker blue on hover */
+}
